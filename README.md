@@ -1,8 +1,10 @@
 <img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
 <div align='left'>
     <a href="https://github.com/tanashic0dex">
-    <div align="right">
-    <img src="https://readme-typing-svg.herokuapp.com?color=008BFF&multiline=true&lines=Coder+for+Unity+Security;Software+and+Framework."
+    <p align='center'><img align="center" alt="Rafa-pic" height="200"  border-radius= "50%" 
+    <img src="https://github.com/tanashic0dex/tanashic0dex/blob/main/7a756c4b22b79583b4168034011694e9.jpg">
+    <div align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?size=24&color=008BFF&vCenter=true&multiline=true&lines=Seja+muito+Bem-Vindo+ao+C0DEX.">
 </div>
     
 </div>
@@ -34,12 +36,20 @@
 <h3 align="center">Languages & Frameworks</h3>
 <p align="center"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tanashic0dex&show_icons=true&locale=en&layout=compact" alt="tanashic0dex" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=tanashic0dex&show_icons=true&locale=en" alt="tanashic0dex" /></p>
-
  ### My Github Stats
-
+     
+</p>
+<div align="center">
+  <a href="https://github.com/tanashic0dex">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tanashic0dex&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true"/>
+      
+ ### Top Languages Uses
+          
+ <div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaballerini&layout=compact&langs_count=7&theme=midnight-purple"/>
+      
+ ### Stats Graphic
+     
 <div>
   <a href="https://github.com/tanashic0dex">
   <img height="190em" src="https://activity-graph.herokuapp.com/graph?username=tanashic0dex&theme=github&bg_color=20232a&hide_border=true"/>
