@@ -20,5 +20,5 @@
 <div>
   <a href="https://github.com/tanashic0dex">
   <img height="200em" src="https://activity-graph.herokuapp.com/graph?username=tanashic0dex&theme=github&bg_color=20232a&hide_border=true"/>
-  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tanashic0dex&hide_border=1&theme=react&hide=issues&langs_count=5&custom_title=Top%20Languages"/>
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?
 <div>
