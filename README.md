@@ -1,4 +1,10 @@
 <img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
+<div align='center'>
+    <a href="https://github.com/tanashic0dex">
+    <img src='https://br.pinterest.com/pin/1688918602456729/' height='128px' weidth'128px' target="_blank"><br>
+    <img src="https://readme-typing-svg.herokuapp.com?size=14&duration=9000&color=FF0000&lines=cOder+for+unity+security%2C+software+and+framework.">
+</div>
+ 
 <h3 align="center">cOder for unity security, software and framework.</h3>
 
 <h3 align="left">Connect with me:</h3>
