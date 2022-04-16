@@ -1,11 +1,25 @@
 <img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
 <div align='center'>
     <a href="https://github.com/tanashic0dex">
-    <img src='' height='128px' weidth'128px' target="_blank"><br>
-    <img src='https://br.pinterest.com/pin/1688918602456729/'><br>
-<h3 align="center"> 
     <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=FF0000&multiline=true&height=51&lines=cOder+for+unity+security;software+and+framework.">
 </div>
+    
+</div>
+  
+  ### FOR ME :>
+ 
+```js
+   //I used "const" because I'm CONSTantly evolving
+   const ME = {
+            Skills: "Coder, Cracker, Back-end Developer",
+        Main_Langs: "JS, CSharp, Python",
+      Casual_Langs: "Cobol, nodeJS", C (Literally)", 
+         Web_Langs: "Javascript, CSS",
+          Services: "Apache, Azure",
+              Tech: "Git, NodeJs",
+                SO: "Gentoo",
+    };
+```
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
