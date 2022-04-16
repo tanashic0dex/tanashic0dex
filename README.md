@@ -2,10 +2,9 @@
 <div align='center'>
     <a href="https://github.com/tanashic0dex">
     <img src='https://br.pinterest.com/pin/1688918602456729/'><br>
+<h3 align="center"> 
     <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=FF0000&multiline=true&height=51&lines=cOder+for+unity+security;software+and+framework.">
 </div>
- 
-<h3 align="center">cOder for unity security, software and framework.</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
