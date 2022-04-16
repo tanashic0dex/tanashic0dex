@@ -9,9 +9,9 @@
   ### FOR ME :>
  
 ```js
-   //I used "const" because I'm CONSTantly evolving
+   </j'ai utilisé const, car j'évolue CONSTamment
    const ME = {
-            Skills: "Coder, Cracker, Back-end Developer",
+            Skills: "Coder, Engineer, AVL, Back-end Developer",
         Main_Langs: "JS, CSharp, Python",
       Casual_Langs: "Cobol, nodeJS", C (Literally)", 
          Web_Langs: "Javascript, CSS",
