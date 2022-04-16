@@ -22,7 +22,10 @@
   <img height="200em" src="https://activity-graph.herokuapp.com/graph?username=tanashic0dex&theme=github&bg_color=20232a&hide_border=true"/>
   <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?
 <div>
-                           <div align='center'>
+                           
+ #                          
+                           
+<div align='center'>
     <a href = "mailto: tanashifreefire@gmail.com"><img src="https://img.shields.io/badge/-Email-%238a90c7?style=for-the-badge&logo=protonmail&logoColor=white" target="_blank"></a>
   	<a href="https://www.youtube.com/tanashiqy" target="_blank"><img src="https://img.shields.io/badge/-Youtube-%23EA4335?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
     <a href="https://instagram.com/tanashiqy" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
