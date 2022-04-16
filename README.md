@@ -1,7 +1,7 @@
 <img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
 <div align='center'>
     <a href="https://github.com/tanashic0dex">
-    <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=FF0000&multiline=true&height=51&lines=cOder+for+unity+security;software+and+framework.">
+    <img src="https://readme-typing-svg.herokuapp.com?duration=3000&multiline=true&lines=Coder+for+Unity+Security;Software+and+Framework.">
 </div>
     
 </div>
