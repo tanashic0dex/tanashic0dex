@@ -1,6 +1,7 @@
 <img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
 <div align='center'>
     <a href="https://github.com/tanashic0dex">
+    <img src='' height='128px' weidth'128px' target="_blank"><br>
     <img src='https://br.pinterest.com/pin/1688918602456729/'><br>
 <h3 align="center"> 
     <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=FF0000&multiline=true&height=51&lines=cOder+for+unity+security;software+and+framework.">
