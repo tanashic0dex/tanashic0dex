@@ -1,59 +1,46 @@
-<img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=blue&style=flat">
-<div align='left'>
-    <a href="https://github.com/tanashic0dex">
-    <p align='center'><img align="center" alt="Rafa-pic" height="200"  border-radius= "50%" 
-    <img src="https://github.com/tanashic0dex/tanashic0dex/blob/main/7a756c4b22b79583b4168034011694e9.jpg">
-    <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?size=24&color=008BFF&vCenter=true&multiline=true&lines=Seja+muito+Bem-Vindo+ao+C0DEX.">
-</div>
-    
-</div>
-<div align="center">
-  
-  ### For Me>
- 
-```js
-   </j'ai utilisé const, car j'évolue CONSTamment
-   const ME = {
-            Skills: "Coder, Engineer, AVL, Back-end Developer",
-        Main_Langs: "JS, CSharp, Python",
-      Casual_Langs: "Cobol, nodeJS", C (Literally)", 
-         Web_Langs: "Javascript, CSS",
-          Services: "Apache, Azure",
-              Tech: "Git, NodeJs",
-                SO: "Gentoo",
-    };
-```
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=7B68EE&height=120&section=header"/>
 
-<h3 align="center">Find me In</h3>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=7B68EE&size=35&center=true&vCenter=true&width=1000&lines=Yo,+My+name+is+Watanashi;I'm+19+years+old;I'm+from+Brazil;I+Graduated+systems+Development;Be+Welcome!+:%29)](https://git.io/typing-svg)
+
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=tanashic0dex&bg_color=5e4fb5&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 <p align="center">
-<a href="https://twitter.com/@joyboy." target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@joyboy." height="30" width="40" /></a>
+  <img src="https://github-profile-trophy.vercel.app/?username=carolbarbosa101&theme=dracula&row=2&no-bg=true&column=3&margin-w=15&margin-h=15" />
+</p>
+
+
+
+<div align="center">  
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=tanashic0dex&show_icons=true&count_private=true&hide_border=true&title_color=7B68EE&icon_color=FFFFFF&text_color=7B68EE&bg_color=0d1117" alt="Tanashic0dex github stats" /> 
+  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tanashic0dex&layout=compact&hide_border=true&title_color=7B68EE&text_color=7B68EE&bg_color=0d1117" />
+</div>
+
+
+<div align="center"> 
+<a href="https://instagram.com/@tanash1zada" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@tanash1zada" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/tanashi c0dex" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="tanashi c0dex" height="30" width="40" /></a>
-<a href="https://instagram.com/@tanashiqy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@tanashiqy" height="30" width="40" /></a>
-<a href="https://discord.gg/https://discord.gg/4u8Y4wF2" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/4u8Y4wF2" height="30" width="40" /></a>
-</p>
+<a href="https://twitter.com/@joyboy." target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@joyboy." height="30" width="40" /></a>
+ </div>
+ 
+ ### Proficiencies:
+![JavaScript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-0D1117?style=for-the-badge&logo=CSS3&logoColor=1572B6&labelColor=0D1117)&nbsp;
+![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp;
+![Php](https://img.shields.io/badge/-php-0D1117?style=for-the-badge&logo=php&logoColor=purple&labelColor=0D1117)&nbsp; 
 
-<h3 align="center">Languages & Frameworks</h3>
-<p align="center"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
- ### My Github Stats
-     
-</p>
+### Working On:
+![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp;
+![Typescript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117&textColor=0D1117)&nbsp;
+![Node.JS](https://img.shields.io/badge/-Node.JS-0D1117?style=for-the-badge&logo=node.js&labelColor=0D1117&textColor=0D1117)&nbsp;
+
 <div align="center">
-  <a href="https://github.com/tanashic0dex">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tanashic0dex&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true"/>
-      
- ### Top Languages Uses
-          
- <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaballerini&layout=compact&langs_count=7&theme=midnight-purple"/>
-      
- ### Stats Graphic
-     
-<div>
-  <a href="https://github.com/tanashic0dex">
-  <img height="190em" src="https://activity-graph.herokuapp.com/graph?username=tanashic0dex&theme=github&bg_color=20232a&hide_border=true"/>
-  <img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/
-    
-<div>
+<img src="https://komarev.com/ghpvc/?username=ArthurHydr&color=ff69b4&style=flat">
+<br>
+</div>
+
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=7B68EE&height=120&section=footer"/>
+
+
                            
