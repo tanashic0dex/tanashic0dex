@@ -1,0 +1,75 @@
+{
+  "login": "tanashic0dex",
+  "name": "Watanashi",
+  "brand": "tanashic0dex",
+  "domain": "tanashic0dex.dev",
+  "timezone": "America/Sao_Paulo",
+  "timezoneLabel": "BRT (UTC−3)",
+
+  "badge": "v19.0 · Now shipping full-stack from Brazil",
+  "headline": ["The full-stack developer", "built for shipping."],
+  "subheadline": [
+    "React, TypeScript & Node.js — from first idea to production.",
+    "19 y/o, based in Brazil, graduated in Systems Development."
+  ],
+
+  "stack": [
+    { "name": "React", "color": "#61DAFB" },
+    { "name": "TypeScript", "color": "#3178C6" },
+    { "name": "JavaScript", "color": "#F7DF1E" },
+    { "name": "Node.js", "color": "#5FA04E" },
+    { "name": "PHP", "color": "#8892BF" },
+    { "name": "CSS", "color": "#2965F1" },
+    { "name": "HTML", "color": "#E34F26" },
+    { "name": "Tailwind", "color": "#38BDF8" },
+    { "name": "Git", "color": "#F05032" }
+  ],
+  "learning": [
+    { "name": "Next.js", "color": "#FFFFFF", "progress": 70 },
+    { "name": "Docker", "color": "#2496ED", "progress": 50 },
+    { "name": "PostgreSQL", "color": "#4169E1", "progress": 60 }
+  ],
+
+  "status": [
+    { "name": "Freelance availability", "state": "Operational" },
+    { "name": "Full-time availability", "state": "Operational" },
+    { "name": "Average response time", "state": "< 24h" }
+  ],
+
+  "pricing": [
+    {
+      "name": "Open Source",
+      "price": "$0",
+      "per": "/forever",
+      "description": "Explore, fork and learn from my code.",
+      "features": ["Star & fork any repo", "Issues and PRs welcome", "Clean, documented code"],
+      "cta": "Browse repos"
+    },
+    {
+      "name": "Freelance",
+      "price": "Let's talk",
+      "per": "/project",
+      "description": "Your idea, shipped end-to-end.",
+      "features": ["Landing pages & web apps", "React + TypeScript frontends", "REST APIs with Node.js", "Deploy & handoff included"],
+      "cta": "Start a project",
+      "highlight": true
+    },
+    {
+      "name": "Full-time",
+      "price": "Hire me",
+      "per": "/remote or hybrid",
+      "description": "A dev who shows up and ships.",
+      "features": ["Junior full-stack role", "React / Node / PHP", "Available right now"],
+      "cta": "Book a call"
+    }
+  ],
+
+  "links": {
+    "email": "",
+    "linkedin": "",
+    "instagram": "https://instagram.com/tanash1zada",
+    "x": ""
+  },
+
+  "ignoreLanguages": ["HTML", "CSS", "Hack"]
+}

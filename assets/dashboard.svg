@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" fill="none" role="img" aria-label="Live GitHub metrics">
+<title>Live GitHub metrics</title>
+<style>
+  .sans{font-family:'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif} .mono{font-family:'JetBrains Mono','Cascadia Code','SF Mono',Consolas,Menlo,monospace}
+  .up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .pulse{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(3)}}
+  .draw{stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 2.4s .4s cubic-bezier(.4,0,.2,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .fadein{animation:fadein 1.6s .9s ease both} @keyframes fadein{from{opacity:0}to{opacity:1}}
+  .blink{animation:blink 1.1s steps(1) infinite} @keyframes blink{50%{opacity:0}}
+  .bob{animation:bob 6s ease-in-out infinite} @keyframes bob{50%{transform:translateY(-8px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.grow{transform-box:fill-box;animation:grow 1.4s cubic-bezier(.3,.7,.2,1) both} @keyframes grow{from{transform:scaleX(0)}}</style>
+
+<defs>
+  <linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7B68EE" stop-opacity=".5"/><stop offset="1" stop-color="#7B68EE" stop-opacity="0"/></linearGradient>
+  <linearGradient id="gLine" x1="0" x2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".6" stop-color="#7B68EE"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <clipPath id="reveal"><rect x="52" y="332" width="520" height="174"><animate attributeName="width" from="0" to="520" dur="2.2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines=".4 0 .2 1" keyTimes="0;1"/></rect></clipPath>
+</defs>
+<rect width="1000" height="600" rx="20" fill="#07060D"/>
+<rect x=".5" y=".5" width="999" height="599" rx="20" stroke="#fff" stroke-opacity=".09"/>
+<circle cx="26" cy="26" r="5" fill="#F472B6" opacity=".75"/><circle cx="42" cy="26" r="5" fill="#FBBF24" opacity=".75"/><circle cx="58" cy="26" r="5" fill="#34D399" opacity=".75"/>
+<text x="500" y="31" class="mono" font-size="12.5" font-weight="400" fill="#5F5B7A" text-anchor="middle" >tanashic0dex / metrics</text>
+<rect x="0" y="52" width="1000" height="1" fill="#fff" fill-opacity=".06"/>
+<text x="32" y="98" class="sans" font-size="26" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-0.8" >Live metrics</text>
+<text x="32" y="122" class="sans" font-size="14" font-weight="400" fill="#9591B3" text-anchor="start" >Real numbers from the GitHub API, rebuilt every day by GitHub Actions.</text>
+<rect x="754" y="78" width="214" height="30" rx="15" fill="#FBBF24" fill-opacity=".1" stroke="#FBBF24" stroke-opacity=".35"/>
+<circle cx="772" cy="93" r="4" fill="#FBBF24"/><circle class="pulse" cx="772" cy="93" r="4" fill="#FBBF24"/>
+<text x="784" y="97.5" class="sans" font-size="12" font-weight="600" fill="#FBBF24" text-anchor="start" >Waiting for first sync…</text>
+
+<rect x="32" y="138" width="223.5" height="96" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="46" y="138" width="195.5" height="1" fill="url(#hl)" opacity=".9"/>
+    <text x="50" y="166" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1.2" >CONTRIBUTIONS</text>
+    <text x="50" y="202" class="sans" font-size="30" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-1" >—</text>
+    <text x="50" y="222" class="sans" font-size="12" font-weight="400" fill="#9591B3" text-anchor="start" >last 12 months</text><path d="M159.5,212 C161.3,212 163.1,212 164.8,212 C166.6,212 168.4,212 170.2,212 C171.9,212 173.7,212 175.5,212 C177.3,212 179.1,212 180.8,212 C182.6,212 184.4,212 186.2,212 C187.9,212 189.7,212 191.5,212 C193.3,212 195.1,212 196.8,212 C198.6,212 200.4,212 202.2,212 C203.9,212 205.7,212 207.5,212 C209.3,212 211.1,212 212.8,212 C214.6,212 216.4,212 218.2,212 C219.9,212 221.7,212 223.5,212 C225.3,212 227.1,212 228.8,212 C230.6,212 232.4,212 234.2,212 C235.9,212 237.7,212 239.5,212 L239.5,212 L159.5,212 Z" fill="url(#gArea)" opacity=".7"/><path d="M159.5,212 C161.3,212 163.1,212 164.8,212 C166.6,212 168.4,212 170.2,212 C171.9,212 173.7,212 175.5,212 C177.3,212 179.1,212 180.8,212 C182.6,212 184.4,212 186.2,212 C187.9,212 189.7,212 191.5,212 C193.3,212 195.1,212 196.8,212 C198.6,212 200.4,212 202.2,212 C203.9,212 205.7,212 207.5,212 C209.3,212 211.1,212 212.8,212 C214.6,212 216.4,212 218.2,212 C219.9,212 221.7,212 223.5,212 C225.3,212 227.1,212 228.8,212 C230.6,212 232.4,212 234.2,212 C235.9,212 237.7,212 239.5,212" stroke="#A78BFA" stroke-width="1.8"/><rect x="269.5" y="138" width="223.5" height="96" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="283.5" y="138" width="195.5" height="1" fill="url(#hl)" opacity=".9"/>
+    <text x="287.5" y="166" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1.2" >CURRENT STREAK</text>
+    <text x="287.5" y="202" class="sans" font-size="30" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-1" >—</text>
+    <text x="287.5" y="222" class="sans" font-size="12" font-weight="400" fill="#9591B3" text-anchor="start" >longest —</text><rect x="507" y="138" width="223.5" height="96" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="521" y="138" width="195.5" height="1" fill="url(#hl)" opacity=".9"/>
+    <text x="525" y="166" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1.2" >ACTIVE DAYS</text>
+    <text x="525" y="202" class="sans" font-size="30" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-1" >—</text>
+    <text x="525" y="222" class="sans" font-size="12" font-weight="400" fill="#9591B3" text-anchor="start" >last 90 days</text><rect x="744.5" y="138" width="223.5" height="96" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="758.5" y="138" width="195.5" height="1" fill="url(#hl)" opacity=".9"/>
+    <text x="762.5" y="166" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1.2" >STARS EARNED</text>
+    <text x="762.5" y="202" class="sans" font-size="30" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-1" >—</text>
+    <text x="762.5" y="222" class="sans" font-size="12" font-weight="400" fill="#9591B3" text-anchor="start" >— followers</text>
+
+<rect x="32" y="256" width="590" height="300" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="46" y="256" width="562" height="1" fill="url(#hl)" opacity=".9"/>
+<text x="56" y="290" class="sans" font-size="15" font-weight="700" fill="#F4F2FF" text-anchor="start" >Contribution activity</text>
+<text x="56" y="310" class="sans" font-size="12" font-weight="400" fill="#9591B3" text-anchor="start" >Weekly contributions · most active on —</text>
+<line x1="56" x2="576" y1="502" y2="502" stroke="#fff" stroke-opacity="0.1" />
+      <line x1="56" x2="576" y1="469" y2="469" stroke="#fff" stroke-opacity="0.04" stroke-dasharray="3 5"/>
+      <line x1="56" x2="576" y1="436" y2="436" stroke="#fff" stroke-opacity="0.04" stroke-dasharray="3 5"/>
+      <line x1="56" x2="576" y1="403" y2="403" stroke="#fff" stroke-opacity="0.04" stroke-dasharray="3 5"/>
+      <line x1="56" x2="576" y1="370" y2="370" stroke="#fff" stroke-opacity="0.04" stroke-dasharray="3 5"/>
+      
+<g clip-path="url(#reveal)">
+  <path d="M56,502 C59.3,502 62.7,502 66,502 C69.4,502 72.7,502 76.1,502 C79.4,502 82.8,502 86.1,502 C89.5,502 92.8,502 96.2,502 C99.5,502 102.8,502 106.2,502 C109.5,502 112.9,502 116.2,502 C119.6,502 122.9,502 126.3,502 C129.6,502 133,502 136.3,502 C139.7,502 143,502 146.4,502 C149.7,502 153,502 156.4,502 C159.7,502 163.1,502 166.4,502 C169.8,502 173.1,502 176.5,502 C179.8,502 183.2,502 186.5,502 C189.9,502 193.2,502 196.5,502 C199.9,502 203.2,502 206.6,502 C209.9,502 213.3,502 216.6,502 C220,502 223.3,502 226.7,502 C230,502 233.4,502 236.7,502 C240.1,502 243.4,502 246.7,502 C250.1,502 253.4,502 256.8,502 C260.1,502 263.5,502 266.8,502 C270.2,502 273.5,502 276.9,502 C280.2,502 283.6,502 286.9,502 C290.2,502 293.6,502 296.9,502 C300.3,502 303.6,502 307,502 C310.3,502 313.7,502 317,502 C320.4,502 323.7,502 327.1,502 C330.4,502 333.8,502 337.1,502 C340.4,502 343.8,502 347.1,502 C350.5,502 353.8,502 357.2,502 C360.5,502 363.9,502 367.2,502 C370.6,502 373.9,502 377.3,502 C380.6,502 383.9,502 387.3,502 C390.6,502 394,502 397.3,502 C400.7,502 404,502 407.4,502 C410.7,502 414.1,502 417.4,502 C420.8,502 424.1,502 427.5,502 C430.8,502 434.1,502 437.5,502 C440.8,502 444.2,502 447.5,502 C450.9,502 454.2,502 457.6,502 C460.9,502 464.3,502 467.6,502 C471,502 474.3,502 477.6,502 C481,502 484.3,502 487.7,502 C491,502 494.4,502 497.7,502 C501.1,502 504.4,502 507.8,502 C511.1,502 514.5,502 517.8,502 C521.2,502 524.5,502 527.8,502 C531.2,502 534.5,502 537.9,502 C541.2,502 544.6,502 547.9,502 C551.3,502 554.6,502 558,502 C561.3,502 564.7,502 568,502 L568,502 L56,502 Z" fill="url(#gArea)"/>
+  <path d="M56,502 C59.3,502 62.7,502 66,502 C69.4,502 72.7,502 76.1,502 C79.4,502 82.8,502 86.1,502 C89.5,502 92.8,502 96.2,502 C99.5,502 102.8,502 106.2,502 C109.5,502 112.9,502 116.2,502 C119.6,502 122.9,502 126.3,502 C129.6,502 133,502 136.3,502 C139.7,502 143,502 146.4,502 C149.7,502 153,502 156.4,502 C159.7,502 163.1,502 166.4,502 C169.8,502 173.1,502 176.5,502 C179.8,502 183.2,502 186.5,502 C189.9,502 193.2,502 196.5,502 C199.9,502 203.2,502 206.6,502 C209.9,502 213.3,502 216.6,502 C220,502 223.3,502 226.7,502 C230,502 233.4,502 236.7,502 C240.1,502 243.4,502 246.7,502 C250.1,502 253.4,502 256.8,502 C260.1,502 263.5,502 266.8,502 C270.2,502 273.5,502 276.9,502 C280.2,502 283.6,502 286.9,502 C290.2,502 293.6,502 296.9,502 C300.3,502 303.6,502 307,502 C310.3,502 313.7,502 317,502 C320.4,502 323.7,502 327.1,502 C330.4,502 333.8,502 337.1,502 C340.4,502 343.8,502 347.1,502 C350.5,502 353.8,502 357.2,502 C360.5,502 363.9,502 367.2,502 C370.6,502 373.9,502 377.3,502 C380.6,502 383.9,502 387.3,502 C390.6,502 394,502 397.3,502 C400.7,502 404,502 407.4,502 C410.7,502 414.1,502 417.4,502 C420.8,502 424.1,502 427.5,502 C430.8,502 434.1,502 437.5,502 C440.8,502 444.2,502 447.5,502 C450.9,502 454.2,502 457.6,502 C460.9,502 464.3,502 467.6,502 C471,502 474.3,502 477.6,502 C481,502 484.3,502 487.7,502 C491,502 494.4,502 497.7,502 C501.1,502 504.4,502 507.8,502 C511.1,502 514.5,502 517.8,502 C521.2,502 524.5,502 527.8,502 C531.2,502 534.5,502 537.9,502 C541.2,502 544.6,502 547.9,502 C551.3,502 554.6,502 558,502 C561.3,502 564.7,502 568,502" stroke="url(#gLine)" stroke-width="2.5" stroke-linecap="round"/>
+  
+</g>
+<text x="312" y="427" class="sans" font-size="14" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Syncing with GitHub…</text>
+<text x="56" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="start" >Oct</text><text x="149.1" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Dec</text><text x="242.2" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Feb</text><text x="335.3" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Apr</text><text x="428.4" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Jun</text><text x="521.5" y="524" class="sans" font-size="11" font-weight="400" fill="#5F5B7A" text-anchor="middle" >Aug</text>
+
+<rect x="638" y="256" width="330" height="300" rx="14" fill="#0E0D16" stroke="#221F33"/>
+<rect x="652" y="256" width="302" height="1" fill="url(#hl)" opacity=".9"/>
+<text x="662" y="290" class="sans" font-size="15" font-weight="700" fill="#F4F2FF" text-anchor="start" >Languages</text>
+<clipPath id="lb"><rect x="662" y="320" width="282" height="10" rx="5"/></clipPath>
+<g clip-path="url(#lb)"><rect x="662" y="320" width="282" height="10" fill="#fff" fill-opacity=".06"/></g>
+<text x="662" y="356" class="sans" font-size="12.5" font-weight="400" fill="#5F5B7A" text-anchor="start" >Syncing…</text>
+<rect x="662" y="384" width="282" height="1" fill="#fff" fill-opacity=".06"/>
+<text x="662" y="414" class="sans" font-size="12.5" font-weight="400" fill="#9591B3" text-anchor="start" >Commits</text>
+      <rect x="768" y="405" width="132" height="8" rx="4" fill="#fff" fill-opacity=".05"/>
+      <rect x="768" y="405" width="4" height="8" rx="4" fill="url(#gLine)" class="grow" style="animation-delay:0.2s"/>
+      <text x="944" y="414" class="mono" font-size="12" font-weight="600" fill="#C9C5E3" text-anchor="end" >0</text><text x="662" y="441" class="sans" font-size="12.5" font-weight="400" fill="#9591B3" text-anchor="start" >Pull requests</text>
+      <rect x="768" y="432" width="132" height="8" rx="4" fill="#fff" fill-opacity=".05"/>
+      <rect x="768" y="432" width="4" height="8" rx="4" fill="url(#gLine)" class="grow" style="animation-delay:0.32s"/>
+      <text x="944" y="441" class="mono" font-size="12" font-weight="600" fill="#C9C5E3" text-anchor="end" >0</text><text x="662" y="468" class="sans" font-size="12.5" font-weight="400" fill="#9591B3" text-anchor="start" >Issues</text>
+      <rect x="768" y="459" width="132" height="8" rx="4" fill="#fff" fill-opacity=".05"/>
+      <rect x="768" y="459" width="4" height="8" rx="4" fill="url(#gLine)" class="grow" style="animation-delay:0.44s"/>
+      <text x="944" y="468" class="mono" font-size="12" font-weight="600" fill="#C9C5E3" text-anchor="end" >0</text><text x="662" y="495" class="sans" font-size="12.5" font-weight="400" fill="#9591B3" text-anchor="start" >Reviews</text>
+      <rect x="768" y="486" width="132" height="8" rx="4" fill="#fff" fill-opacity=".05"/>
+      <rect x="768" y="486" width="4" height="8" rx="4" fill="url(#gLine)" class="grow" style="animation-delay:0.56s"/>
+      <text x="944" y="495" class="mono" font-size="12" font-weight="600" fill="#C9C5E3" text-anchor="end" >0</text>
+</svg>

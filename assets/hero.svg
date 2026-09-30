@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" fill="none" role="img" aria-label="tanashic0dex — The full-stack developer built for shipping.">
+<title>tanashic0dex — The full-stack developer built for shipping.</title>
+<style>
+  .sans{font-family:'Inter','Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif} .mono{font-family:'JetBrains Mono','Cascadia Code','SF Mono',Consolas,Menlo,monospace}
+  .up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .pulse{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(3)}}
+  .draw{stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 2.4s .4s cubic-bezier(.4,0,.2,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .fadein{animation:fadein 1.6s .9s ease both} @keyframes fadein{from{opacity:0}to{opacity:1}}
+  .blink{animation:blink 1.1s steps(1) infinite} @keyframes blink{50%{opacity:0}}
+  .bob{animation:bob 6s ease-in-out infinite} @keyframes bob{50%{transform:translateY(-8px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  .a1{animation:a1 16s ease-in-out infinite alternate} @keyframes a1{to{transform:translate(120px,40px)}}
+  .a2{animation:a2 19s ease-in-out infinite alternate} @keyframes a2{to{transform:translate(-140px,60px)}}
+  .a3{animation:a3 22s ease-in-out infinite alternate} @keyframes a3{to{transform:translate(90px,-40px)}}</style>
+
+<defs>
+  <clipPath id="clip"><rect width="1000" height="850" rx="24"/></clipPath>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" stroke="#fff" stroke-opacity=".055"/></pattern>
+  <radialGradient id="gridFade" cx=".5" cy=".32" r=".62"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <mask id="gridMask"><rect width="1000" height="850" fill="url(#gridFade)"/></mask>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+  <filter id="glow" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="12"/></filter>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".55"/></filter>
+  <linearGradient id="gText" gradientUnits="userSpaceOnUse" x1="240" y1="0" x2="760" y2="0" spreadMethod="reflect">
+    <stop offset="0" stop-color="#C4B5FD"/><stop offset=".35" stop-color="#7B68EE"/><stop offset=".65" stop-color="#22D3EE"/><stop offset="1" stop-color="#F472B6"/>
+    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1040 0" dur="9s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="gBtn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#7B68EE"/></linearGradient>
+  <linearGradient id="gLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C4B5FD"/><stop offset=".5" stop-color="#7B68EE"/><stop offset="1" stop-color="#4C3BCF"/></linearGradient>
+  <linearGradient id="gBorder" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A78BFA" stop-opacity=".9"/><stop offset=".45" stop-color="#2E2A45"/><stop offset="1" stop-color="#221F33" stop-opacity="0"/></linearGradient>
+  <linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7B68EE" stop-opacity=".45"/><stop offset="1" stop-color="#7B68EE" stop-opacity="0"/></linearGradient>
+  <linearGradient id="gLine" x1="0" x2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".6" stop-color="#7B68EE"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <linearGradient id="gFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07060D" stop-opacity="0"/><stop offset="1" stop-color="#07060D"/></linearGradient>
+  <linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+
+<g clip-path="url(#clip)">
+  <rect width="1000" height="850" fill="#07060D"/>
+  <g filter="url(#blur)">
+    <ellipse class="a1" cx="300" cy="140" rx="260" ry="150" fill="#7B68EE" opacity=".42"/>
+    <ellipse class="a2" cx="740" cy="200" rx="220" ry="140" fill="#22D3EE" opacity=".16"/>
+    <ellipse class="a3" cx="500" cy="620" rx="340" ry="130" fill="#F472B6" opacity=".14"/>
+  </g>
+  <rect width="1000" height="850" fill="url(#grid)" mask="url(#gridMask)"/>
+
+  <!-- navbar -->
+  <g class="up">
+    <rect x="40" y="26" width="32" height="32" rx="9" fill="url(#gLogo)"/>
+    <path d="M51 37 l-5 5 5 5 M61 37 l5 5 -5 5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="84" y="48" class="sans" font-size="17" font-weight="700" fill="#F4F2FF" text-anchor="start" letter-spacing="-0.3" >tanashic0dex</text>
+    <text x="320.8" y="49" class="sans" font-size="14" font-weight="500" fill="#9591B3" text-anchor="start" >Product</text><text x="404.3" y="49" class="sans" font-size="14" font-weight="500" fill="#9591B3" text-anchor="start" >Stack</text><text x="475.3" y="49" class="sans" font-size="14" font-weight="500" fill="#9591B3" text-anchor="start" >Metrics</text><text x="558.1" y="49" class="sans" font-size="14" font-weight="500" fill="#9591B3" text-anchor="start" >Status</text><text x="634.1" y="49" class="sans" font-size="14" font-weight="500" fill="#9591B3" text-anchor="start" >Pricing</text>
+    <circle cx="738" cy="44" r="4" fill="#34D399"/><circle class="pulse" cx="738" cy="44" r="4" fill="#34D399"/>
+    <text x="750" y="49" class="sans" font-size="13" font-weight="500" fill="#C9C5E3" text-anchor="start" >Open to work</text>
+    <rect x="854" y="26" width="106" height="36" rx="18" fill="#fff"/>
+    <text x="907" y="49" class="sans" font-size="14" font-weight="700" fill="#0B0A12" text-anchor="middle" >Hire me →</text>
+  </g>
+  <rect x="0" y="84" width="1000" height="1" fill="#fff" opacity=".05"/>
+
+  <!-- announcement -->
+  <g class="up" style="animation-delay:.1s">
+    <rect x="317.3" y="108" width="365.4" height="32" rx="16" fill="#7B68EE" fill-opacity=".1" stroke="#7B68EE" stroke-opacity=".45"/>
+    <rect x="322.3" y="113" width="43.7" height="22" rx="11" fill="#7B68EE"/>
+    <text x="344.2" y="128.5" class="sans" font-size="11" font-weight="800" fill="#F4F2FF" text-anchor="middle" letter-spacing="0.8" >NEW</text>
+    <text x="376" y="129" class="sans" font-size="13" font-weight="600" fill="#C4B5FD" text-anchor="start" >v19.0 · Now shipping full-stack from Brazil</text>
+    <text x="664.7" y="129" class="sans" font-size="13" font-weight="700" fill="#C4B5FD" text-anchor="middle" >→</text>
+  </g>
+
+  <!-- headline -->
+  <g class="up" style="animation-delay:.2s">
+    <text x="500" y="212" class="sans" font-size="62" font-weight="800" fill="#F4F2FF" text-anchor="middle" letter-spacing="-2.6" >The full-stack developer</text>
+  </g>
+  <g class="up" style="animation-delay:.3s">
+    <text x="500" y="284" class="sans" font-size="62" font-weight="800"  text-anchor="middle" letter-spacing="-2.6" fill="url(#gText)">built for shipping.</text>
+  </g>
+  <g class="up" style="animation-delay:.4s">
+    <text x="500" y="330" class="sans" font-size="18" font-weight="400" fill="#9591B3" text-anchor="middle" >React, TypeScript &amp; Node.js — from first idea to production.</text><text x="500" y="355" class="sans" font-size="18" font-weight="400" fill="#9591B3" text-anchor="middle" >19 y/o, based in Brazil, graduated in Systems Development.</text>
+  </g>
+
+  <!-- CTAs -->
+  <g class="up" style="animation-delay:.5s">
+    <rect x="330.5" y="400" width="170.6" height="40" rx="20" fill="#7B68EE" opacity=".6" filter="url(#glow)"/>
+    <rect x="330.5" y="390" width="170.6" height="50" rx="25" fill="url(#gBtn)"/>
+    <rect x="350.5" y="390" width="130.6" height="1" fill="#fff" opacity=".5"/>
+    <text x="405.8" y="421" class="sans" font-size="15" font-weight="700" fill="#F4F2FF" text-anchor="middle" >Start a project</text>
+    <text x="471.1" y="421" class="sans" font-size="15" font-weight="700" fill="#F4F2FF" text-anchor="middle" >→</text>
+    <rect x="515.1" y="390" width="154.4" height="50" rx="25" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".16"/>
+    <text x="592.3" y="421" class="sans" font-size="15" font-weight="600" fill="#C9C5E3" text-anchor="middle" >View my work</text>
+  </g>
+  <g class="up" style="animation-delay:.6s"><text x="319.7" y="480" class="sans" font-size="13" font-weight="700" fill="#C9C5E3" text-anchor="start" >—</text><text x="337.2" y="480" class="sans" font-size="13" font-weight="400" fill="#5F5B7A" text-anchor="start" >stars</text><text x="385.6" y="480" class="sans" font-size="13" font-weight="400" fill="#5F5B7A" text-anchor="middle" >·</text><text x="403.6" y="480" class="sans" font-size="13" font-weight="700" fill="#C9C5E3" text-anchor="start" >—</text><text x="421.1" y="480" class="sans" font-size="13" font-weight="400" fill="#5F5B7A" text-anchor="start" >public repos</text><text x="511.3" y="480" class="sans" font-size="13" font-weight="400" fill="#5F5B7A" text-anchor="middle" >·</text><text x="529.3" y="480" class="sans" font-size="13" font-weight="700" fill="#C9C5E3" text-anchor="start" >—</text><text x="546.8" y="480" class="sans" font-size="13" font-weight="400" fill="#5F5B7A" text-anchor="start" >contributions this year</text></g>
+
+  <!-- product mock -->
+  <g class="up" style="animation-delay:.7s">
+    <rect x="100" y="540" width="800" height="330" rx="16" fill="#0E0D16" filter="url(#shadow)"/>
+    <rect x="100" y="540" width="800" height="330" rx="16" fill="#0E0D16" stroke="url(#gBorder)"/>
+    <circle cx="122" cy="560" r="5" fill="#F472B6" opacity=".75"/><circle cx="138" cy="560" r="5" fill="#FBBF24" opacity=".75"/><circle cx="154" cy="560" r="5" fill="#34D399" opacity=".75"/>
+    <rect x="370" y="549" width="260" height="22" rx="11" fill="#fff" fill-opacity=".04"/>
+    <text x="500" y="564.5" class="mono" font-size="11.5" font-weight="400" fill="#5F5B7A" text-anchor="middle" >app.tanashic0dex.dev/overview</text>
+    <rect x="100" y="580" width="800" height="1" fill="#221F33"/>
+    <rect x="270" y="581" width="1" height="289" fill="#221F33"/>
+    
+      <rect x="112" y="596" width="146" height="30" rx="8" fill="#7B68EE" fill-opacity=".14"/>
+      <rect x="124" y="605" width="12" height="12" rx="3.5" fill="#A78BFA" fill-opacity="1"/>
+      <text x="146" y="615.5" class="sans" font-size="13" font-weight="600" fill="#F4F2FF" text-anchor="start" >Overview</text>
+      
+      <rect x="124" y="641" width="12" height="12" rx="3.5" fill="#5F5B7A" fill-opacity="0.6"/>
+      <text x="146" y="651.5" class="sans" font-size="13" font-weight="400" fill="#9591B3" text-anchor="start" >Projects</text>
+      
+      <rect x="124" y="677" width="12" height="12" rx="3.5" fill="#5F5B7A" fill-opacity="0.6"/>
+      <text x="146" y="687.5" class="sans" font-size="13" font-weight="400" fill="#9591B3" text-anchor="start" >Deployments</text>
+      
+      <rect x="124" y="713" width="12" height="12" rx="3.5" fill="#5F5B7A" fill-opacity="0.6"/>
+      <text x="146" y="723.5" class="sans" font-size="13" font-weight="400" fill="#9591B3" text-anchor="start" >Analytics</text>
+      
+      <rect x="124" y="749" width="12" height="12" rx="3.5" fill="#5F5B7A" fill-opacity="0.6"/>
+      <text x="146" y="759.5" class="sans" font-size="13" font-weight="400" fill="#9591B3" text-anchor="start" >Settings</text>
+    <text x="290" y="616" class="sans" font-size="17" font-weight="700" fill="#F4F2FF" text-anchor="start" >Overview</text>
+    <text x="880" y="616" class="sans" font-size="12" font-weight="400" fill="#5F5B7A" text-anchor="end" >Last 12 months</text>
+    <rect x="290" y="636" width="188.7" height="96" rx="10" fill="#15131F" stroke="#221F33"/>
+      <text x="304" y="658" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1" >CONTRIBUTIONS</text>
+      <text x="304" y="690" class="sans" font-size="26" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-0.8" >—</text>
+      <text x="304" y="715" class="sans" font-size="11.5" font-weight="500" fill="#34D399" text-anchor="start" >last 12 months</text><rect x="490.7" y="636" width="188.7" height="96" rx="10" fill="#15131F" stroke="#221F33"/>
+      <text x="504.7" y="658" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1" >CURRENT STREAK</text>
+      <text x="504.7" y="690" class="sans" font-size="26" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-0.8" >—</text>
+      <text x="504.7" y="715" class="sans" font-size="11.5" font-weight="500" fill="#9591B3" text-anchor="start" >longest: —</text><rect x="691.3" y="636" width="188.7" height="96" rx="10" fill="#15131F" stroke="#221F33"/>
+      <text x="705.3" y="658" class="sans" font-size="10.5" font-weight="700" fill="#5F5B7A" text-anchor="start" letter-spacing="1" >STARS EARNED</text>
+      <text x="705.3" y="690" class="sans" font-size="26" font-weight="800" fill="#F4F2FF" text-anchor="start" letter-spacing="-0.8" >—</text>
+      <text x="705.3" y="715" class="sans" font-size="11.5" font-weight="500" fill="#9591B3" text-anchor="start" >across — public repos</text>
+    <path d="M290,832 C293.9,832 297.7,832 301.6,832 C305.4,832 309.3,832 313.1,832 C317,832 320.8,832 324.7,832 C328.6,832 332.4,832 336.3,832 C340.1,832 344,832 347.8,832 C351.7,832 355.6,832 359.4,832 C363.3,832 367.1,832 371,832 C374.8,832 378.7,832 382.5,832 C386.4,832 390.3,832 394.1,832 C398,832 401.8,832 405.7,832 C409.5,832 413.4,832 417.3,832 C421.1,832 425,832 428.8,832 C432.7,832 436.5,832 440.4,832 C444.2,832 448.1,832 452,832 C455.8,832 459.7,832 463.5,832 C467.4,832 471.2,832 475.1,832 C479,832 482.8,832 486.7,832 C490.5,832 494.4,832 498.2,832 C502.1,832 505.9,832 509.8,832 C513.7,832 517.5,832 521.4,832 C525.2,832 529.1,832 532.9,832 C536.8,832 540.7,832 544.5,832 C548.4,832 552.2,832 556.1,832 C559.9,832 563.8,832 567.6,832 C571.5,832 575.4,832 579.2,832 C583.1,832 586.9,832 590.8,832 C594.6,832 598.5,832 602.4,832 C606.2,832 610.1,832 613.9,832 C617.8,832 621.6,832 625.5,832 C629.3,832 633.2,832 637.1,832 C640.9,832 644.8,832 648.6,832 C652.5,832 656.3,832 660.2,832 C664.1,832 667.9,832 671.8,832 C675.6,832 679.5,832 683.3,832 C687.2,832 691,832 694.9,832 C698.8,832 702.6,832 706.5,832 C710.3,832 714.2,832 718,832 C721.9,832 725.8,832 729.6,832 C733.5,832 737.3,832 741.2,832 C745,832 748.9,832 752.7,832 C756.6,832 760.5,832 764.3,832 C768.2,832 772,832 775.9,832 C779.7,832 783.6,832 787.5,832 C791.3,832 795.2,832 799,832 C802.9,832 806.7,832 810.6,832 C814.4,832 818.3,832 822.2,832 C826,832 829.9,832 833.7,832 C837.6,832 841.4,832 845.3,832 C849.2,832 853,832 856.9,832 C860.7,832 864.6,832 868.4,832 C872.3,832 876.1,832 880,832 L880,832 L290,832 Z" fill="url(#gArea)" class="fadein"/>
+    <path d="M290,832 C293.9,832 297.7,832 301.6,832 C305.4,832 309.3,832 313.1,832 C317,832 320.8,832 324.7,832 C328.6,832 332.4,832 336.3,832 C340.1,832 344,832 347.8,832 C351.7,832 355.6,832 359.4,832 C363.3,832 367.1,832 371,832 C374.8,832 378.7,832 382.5,832 C386.4,832 390.3,832 394.1,832 C398,832 401.8,832 405.7,832 C409.5,832 413.4,832 417.3,832 C421.1,832 425,832 428.8,832 C432.7,832 436.5,832 440.4,832 C444.2,832 448.1,832 452,832 C455.8,832 459.7,832 463.5,832 C467.4,832 471.2,832 475.1,832 C479,832 482.8,832 486.7,832 C490.5,832 494.4,832 498.2,832 C502.1,832 505.9,832 509.8,832 C513.7,832 517.5,832 521.4,832 C525.2,832 529.1,832 532.9,832 C536.8,832 540.7,832 544.5,832 C548.4,832 552.2,832 556.1,832 C559.9,832 563.8,832 567.6,832 C571.5,832 575.4,832 579.2,832 C583.1,832 586.9,832 590.8,832 C594.6,832 598.5,832 602.4,832 C606.2,832 610.1,832 613.9,832 C617.8,832 621.6,832 625.5,832 C629.3,832 633.2,832 637.1,832 C640.9,832 644.8,832 648.6,832 C652.5,832 656.3,832 660.2,832 C664.1,832 667.9,832 671.8,832 C675.6,832 679.5,832 683.3,832 C687.2,832 691,832 694.9,832 C698.8,832 702.6,832 706.5,832 C710.3,832 714.2,832 718,832 C721.9,832 725.8,832 729.6,832 C733.5,832 737.3,832 741.2,832 C745,832 748.9,832 752.7,832 C756.6,832 760.5,832 764.3,832 C768.2,832 772,832 775.9,832 C779.7,832 783.6,832 787.5,832 C791.3,832 795.2,832 799,832 C802.9,832 806.7,832 810.6,832 C814.4,832 818.3,832 822.2,832 C826,832 829.9,832 833.7,832 C837.6,832 841.4,832 845.3,832 C849.2,832 853,832 856.9,832 C860.7,832 864.6,832 868.4,832 C872.3,832 876.1,832 880,832" stroke="url(#gLine)" stroke-width="2.4" stroke-linecap="round" class="draw"/>
+  </g>
+
+  <!-- floating toasts -->
+  <g class="bob" style="animation-delay:-2s">
+    <g class="up" style="animation-delay:1.2s">
+      <rect x="720" y="514" width="230" height="52" rx="12" fill="#15131F" stroke="#2E2A45" filter="url(#shadow)"/>
+      <rect x="720" y="514" width="230" height="52" rx="12" fill="#15131F" stroke="#2E2A45"/>
+      <circle cx="746" cy="540" r="12" fill="#34D399" fill-opacity=".15"/>
+      <path d="M741 540 l3.5 3.5 6.5-7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="766" y="537" class="sans" font-size="13" font-weight="700" fill="#F4F2FF" text-anchor="start" >Build passed</text>
+      <text x="766" y="554" class="sans" font-size="11.5" font-weight="400" fill="#9591B3" text-anchor="start" >main · all checks green</text>
+    </g>
+  </g>
+  
+
+  <rect x="0" y="730" width="1000" height="120" fill="url(#gFade)"/>
+</g>
+<rect x=".5" y=".5" width="999" height="849" rx="24" stroke="#fff" stroke-opacity=".08"/>
+</svg>

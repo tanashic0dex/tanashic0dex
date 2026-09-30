@@ -1,72 +1,47 @@
-name: Update profile
+# Rebuilds the profile (SVGs + README) from real GitHub data.
+# Runs every day, on manual trigger, and whenever the config or the script changes.
+name: Build profile
 
 on:
   schedule:
-    - cron: "17 6 * * *"
+    - cron: "17 6 * * *" # daily, 03:17 in São Paulo
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/profile.yml"]
+    paths:
+      - profile.config.json
+      - scripts/**
+      - .github/workflows/profile.yml
 
 permissions:
   contents: write
 
-jobs:
-  metrics:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: tanashic0dex
-          filename: metrics.svg
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: America/Sao_Paulo
-          config_display: large
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: B
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 30
+concurrency:
+  group: profile-build
+  cancel-in-progress: true
 
-  contrib-3d:
+jobs:
+  build:
     runs-on: ubuntu-latest
-    needs: metrics
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit 3D graph
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
-          git add -A profile-3d-contrib
-          git diff --cached --quiet || git commit -m "chore: update 3D contributions"
-          git push
 
-  snake:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
+      - uses: actions/setup-node@v4
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg?color_snake=#7B68EE
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#7B68EE&color_dots=#161b22,#2e2860,#4a3fa0,#6a5acd,#9d8cff
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+          node-version: 22
+
+      - name: Render profile
+        run: node scripts/build.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # METRICS_TOKEN (optional) also counts private contributions
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets README.md
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "chore(profile): daily rebuild"
+          git push
