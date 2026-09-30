@@ -1,65 +1,55 @@
 {
   "login": "tanashic0dex",
   "name": "Watanashi",
-  "brand": "tanashic0dex",
-  "domain": "tanashic0dex.dev",
+  "role": "Full-stack developer",
+  "version": "v19.0",
+  "location": "Brazil",
   "timezone": "America/Sao_Paulo",
-  "timezoneLabel": "BRT (UTC−3)",
+  "timezoneLabel": "UTC−3 (BRT)",
+  "education": "Systems Development",
+  "availability": "Open to work",
 
-  "badge": "v19.0 · Now shipping full-stack from Brazil",
-  "headline": ["The full-stack developer", "built for shipping."],
-  "subheadline": [
-    "React, TypeScript & Node.js — from first idea to production.",
-    "19 y/o, based in Brazil, graduated in Systems Development."
+  "highlights": [
+    { "label": "Primary stack", "value": "React + TS", "sub": "frontend, day to day" },
+    { "label": "Backend", "value": "Node · PHP", "sub": "REST APIs & services" },
+    { "label": "Learning now", "value": "Next.js", "sub": "plus Docker & PostgreSQL" },
+    { "label": "Response time", "value": "< 24h", "sub": "email or LinkedIn" }
   ],
 
   "stack": [
-    { "name": "React", "color": "#61DAFB" },
-    { "name": "TypeScript", "color": "#3178C6" },
-    { "name": "JavaScript", "color": "#F7DF1E" },
-    { "name": "Node.js", "color": "#5FA04E" },
-    { "name": "PHP", "color": "#8892BF" },
-    { "name": "CSS", "color": "#2965F1" },
-    { "name": "HTML", "color": "#E34F26" },
-    { "name": "Tailwind", "color": "#38BDF8" },
-    { "name": "Git", "color": "#F05032" }
-  ],
-  "learning": [
-    { "name": "Next.js", "color": "#FFFFFF", "progress": 70 },
-    { "name": "Docker", "color": "#2496ED", "progress": 50 },
-    { "name": "PostgreSQL", "color": "#4169E1", "progress": 60 }
+    { "name": "React", "category": "Frontend", "level": 85, "status": "Production" },
+    { "name": "TypeScript", "category": "Language", "level": 75, "status": "Production" },
+    { "name": "JavaScript", "category": "Language", "level": 88, "status": "Production" },
+    { "name": "Node.js", "category": "Backend", "level": 72, "status": "Production" },
+    { "name": "PHP", "category": "Backend", "level": 70, "status": "Production" },
+    { "name": "CSS / Tailwind", "category": "Frontend", "level": 82, "status": "Production" },
+    { "name": "Git", "category": "Tooling", "level": 78, "status": "Production" },
+    { "name": "Next.js", "category": "Framework", "level": 55, "status": "Learning" },
+    { "name": "Docker", "category": "Infra", "level": 40, "status": "Learning" },
+    { "name": "PostgreSQL", "category": "Database", "level": 50, "status": "Learning" }
   ],
 
-  "status": [
-    { "name": "Freelance availability", "state": "Operational" },
-    { "name": "Full-time availability", "state": "Operational" },
-    { "name": "Average response time", "state": "< 24h" }
-  ],
-
-  "pricing": [
+  "services": [
     {
       "name": "Open Source",
-      "price": "$0",
-      "per": "/forever",
+      "price": "Free",
       "description": "Explore, fork and learn from my code.",
-      "features": ["Star & fork any repo", "Issues and PRs welcome", "Clean, documented code"],
+      "features": ["Public repositories", "Issues and PRs welcome", "Clean, documented code"],
       "cta": "Browse repos"
     },
     {
       "name": "Freelance",
-      "price": "Let's talk",
-      "per": "/project",
+      "price": "Per project",
       "description": "Your idea, shipped end-to-end.",
-      "features": ["Landing pages & web apps", "React + TypeScript frontends", "REST APIs with Node.js", "Deploy & handoff included"],
+      "features": ["Landing pages & web apps", "React + TypeScript frontends", "REST APIs with Node.js", "Deploy & handoff"],
       "cta": "Start a project",
       "highlight": true
     },
     {
       "name": "Full-time",
       "price": "Hire me",
-      "per": "/remote or hybrid",
-      "description": "A dev who shows up and ships.",
-      "features": ["Junior full-stack role", "React / Node / PHP", "Available right now"],
+      "description": "A developer who shows up and ships.",
+      "features": ["Junior full-stack role", "Remote or hybrid", "Available right now"],
       "cta": "Book a call"
     }
   ],
