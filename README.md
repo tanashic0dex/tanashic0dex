@@ -5,19 +5,63 @@
 
 <br/>
 
-hey, i'm **watanashi** — a 19 y/o full-stack developer from brazil.
+### hey, i'm watanashi.
 
-i build web apps end to end with react, typescript and node.js, and still reach for php when the job calls for it. graduated in systems development; currently going deeper into next.js, docker and postgres.
+i'm a 22 y/o full-stack developer from brazil, and i ship production software end to end — from the database schema to the last pixel of the interface.
 
-open to freelance and full-time roles. the fastest way to reach me is [instagram](https://instagram.com/tanash1zada).
+lately that means **payments and marketplaces**: a multi-tenant pix platform in .net, a p2p marketplace in next.js, and the admin dashboards people use to run them every day.
+
+- **full ownership** — schema, api, ui, deploy. you don't need three people to get one feature out.
+- **product sense** — i build for the metric that matters, not just for what's written in the ticket.
+- **interfaces that feel expensive** — motion, typography and details done properly, with gsap and three.js when it earns its place.
+
+open to **freelance projects** and **full-time remote roles**.
 
 <br/>
 
+### selected work
+
+<a href="https://armpay.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-armpay-dark.svg"><img src="assets/work-armpay-light.svg" width="49%" alt="ArmPay — multi-tenant PIX payments"></picture></a>&nbsp;
+<a href="https://marketmanga.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-mangastore-dark.svg"><img src="assets/work-mangastore-light.svg" width="49%" alt="Manga Store — P2P marketplace"></picture></a>
+<a href="https://reobote-omega.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-reobote-dark.svg"><img src="assets/work-reobote-light.svg" width="49%" alt="Reobote — real-estate consultancy"></picture></a>&nbsp;
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-vbl-dark.svg"><img src="assets/work-vbl-light.svg" width="49%" alt="VBL Tournaments — tournament manager"></picture>
+
+<sub>most of my work lives in 35+ private repositories — payments, marketplaces, bots and auth systems. happy to walk you through the code on a call.</sub>
+
+<br/>
+
+### stack
+
+<sub>`languages`</sub><br/>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,ts,js,nodejs,php,tailwind,nextjs,docker,postgres,git&theme=dark">
-  <img alt="react, typescript, javascript, node.js, php, tailwind, next.js, docker, postgres, git" src="https://skillicons.dev/icons?i=react,ts,js,nodejs,php,tailwind,nextjs,docker,postgres,git&theme=light">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Ccs%2Cpy%2Cphp%2Chtml%2Ccss&theme=dark">
+  <img alt="ts, js, cs, py, php, html, css" src="https://skillicons.dev/icons?i=ts%2Cjs%2Ccs%2Cpy%2Cphp%2Chtml%2Ccss&theme=light" height="44">
 </picture>
 
-<br/><br/>
+<sub>`frontend`</sub><br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite&theme=dark">
+  <img alt="react, nextjs, tailwind, threejs, vite" src="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite&theme=light" height="44">
+</picture>
 
-<sub>the graph above is drawn, not earned. <a href="scripts/name-graph.mjs">here's how.</a></sub>
+<sub>`backend & data`</sub><br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs%2Cdotnet%2Cgraphql%2Cpostgres%2Cmongodb%2Cprisma%2Cmysql&theme=dark">
+  <img alt="nodejs, dotnet, graphql, postgres, mongodb, prisma, mysql" src="https://skillicons.dev/icons?i=nodejs%2Cdotnet%2Cgraphql%2Cpostgres%2Cmongodb%2Cprisma%2Cmysql&theme=light" height="44">
+</picture>
+
+<sub>`infra & tools`</sub><br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker%2Cvercel%2Cgit%2Cgithub%2Cvscode&theme=dark">
+  <img alt="docker, vercel, git, github, vscode" src="https://skillicons.dev/icons?i=docker%2Cvercel%2Cgit%2Cgithub%2Cvscode&theme=light" height="44">
+</picture>
+
+<br/>
+
+### get in touch
+
+[instagram](https://instagram.com/tanash1zada) &nbsp;·&nbsp; [github](https://github.com/tanashic0dex)
+
+<br/>
+
+<sub>the graph at the top is drawn, not earned — <a href="scripts/name-graph.mjs">here's how</a>.</sub>
