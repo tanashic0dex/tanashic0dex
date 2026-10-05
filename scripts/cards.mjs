@@ -51,7 +51,7 @@ function card(p, T) {
   }).join("");
   const live = p.status === "live";
   const badge = live
-    ? `<circle cx="${W - 82}" cy="31" r="3.5" fill="${T.green}" class="pulse"/><text x="${W - 24}" y="35" class="m" text-anchor="end" fill="${T.green}">live ↗</text>`
+    ? `<circle cx="${W - 82}" cy="31" r="3.5" fill="${T.green}" class="pulse"/><text x="${W - 24}" y="35" class="m" text-anchor="end" style="fill:${T.green}">live ↗</text>`
     : `<path d="M${W - 92} 30 h8 v6 h-8z M${W - 90} 30 v-2.5 a2 2 0 0 1 4 0 v2.5" stroke="${T.muted}" stroke-width="1.3" fill="none"/><text x="${W - 24}" y="35" class="m" text-anchor="end">private</text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(p.name)}">
 <style>
