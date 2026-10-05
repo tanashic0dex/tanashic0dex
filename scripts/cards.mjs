@@ -20,16 +20,6 @@ export const PROJECTS = [
     desc: ["P2P marketplace for game accounts, items and gold —", "stores, order chat, reviews, PIX and push alerts."],
     stack: ["Next.js", "TypeScript", "Drizzle", "Neon", "Better Auth", "GSAP"],
   },
-  {
-    slug: "reobote", n: "03", name: "Reobote", status: "live", url: "https://reobote-omega.vercel.app",
-    desc: ["Real-estate consultancy site with an admin panel", "for listings, photo uploads and leads via WhatsApp."],
-    stack: ["Next.js", "Prisma", "PostgreSQL", "NextAuth", "Motion"],
-  },
-  {
-    slug: "vbl", n: "04", name: "VBL Tournaments", status: "private",
-    desc: ["Tournament manager for 1v1 to 4v4 brackets,", "team registration and a 3D animated interface."],
-    stack: ["Next.js", "MongoDB", "Three.js", "shadcn/ui"],
-  },
 ];
 
 const THEMES = {

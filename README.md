@@ -23,8 +23,7 @@ open to **freelance projects** and **full-time remote roles**.
 
 <a href="https://armpay.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-armpay-dark.svg"><img src="assets/work-armpay-light.svg" width="49%" alt="ArmPay — multi-tenant PIX payments"></picture></a>&nbsp;
 <a href="https://marketmanga.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-mangastore-dark.svg"><img src="assets/work-mangastore-light.svg" width="49%" alt="Manga Store — P2P marketplace"></picture></a>
-<a href="https://reobote-omega.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-reobote-dark.svg"><img src="assets/work-reobote-light.svg" width="49%" alt="Reobote — real-estate consultancy"></picture></a>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-vbl-dark.svg"><img src="assets/work-vbl-light.svg" width="49%" alt="VBL Tournaments — tournament manager"></picture>
+
 
 <sub>most of my work lives in 35+ private repositories — payments, marketplaces, bots and auth systems. happy to walk you through the code on a call.</sub>
 
