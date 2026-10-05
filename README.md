@@ -14,7 +14,7 @@ lately that means **payments and marketplaces**: a multi-tenant pix platform in 
 - **full ownership** — schema, api, ui, deploy. you don't need three people to get one feature out.
 - **product sense** — i build for the metric that matters, not just for what's written in the ticket.
 - **interfaces that feel expensive** — designed in figma, built with motion, typography and details done properly (gsap and three.js when it earns its place).
-- **ai-native engineering** — i run claude code and cursor with custom agents, skills and spec-driven development (spec kit), so i ship at team speed without losing control of the code.
+- **ai-native engineering** and more..
 
 open to **freelance projects** and **full-time remote roles**.
 
