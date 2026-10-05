@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const WORD = "WATANASHI";
-const CAPTION = "full-stack developer · brazil";
+const CAPTION = "full-stack product engineer · brazil";
 
 // 5×7 pixel font — 7 rows, exactly the height of a contribution graph
 const FONT = {

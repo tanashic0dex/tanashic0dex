@@ -7,13 +7,14 @@
 
 ### hey, i'm watanashi.
 
-i'm a 22 y/o full-stack developer from brazil, and i ship production software end to end — from the database schema to the last pixel of the interface.
+i'm a 22 y/o **full-stack product engineer** from brazil, and i ship production software end to end — from the database schema to the last pixel of the interface.
 
 lately that means **payments and marketplaces**: a multi-tenant pix platform in .net, a p2p marketplace in next.js, and the admin dashboards people use to run them every day.
 
 - **full ownership** — schema, api, ui, deploy. you don't need three people to get one feature out.
 - **product sense** — i build for the metric that matters, not just for what's written in the ticket.
-- **interfaces that feel expensive** — motion, typography and details done properly, with gsap and three.js when it earns its place.
+- **interfaces that feel expensive** — designed in figma, built with motion, typography and details done properly (gsap and three.js when it earns its place).
+- **ai-native engineering** — i run claude code and cursor with custom agents, skills and spec-driven development (spec kit), so i ship at team speed without losing control of the code.
 
 open to **freelance projects** and **full-time remote roles**.
 
@@ -37,10 +38,10 @@ open to **freelance projects** and **full-time remote roles**.
   <img alt="ts, js, cs, py, php, html, css" src="https://skillicons.dev/icons?i=ts%2Cjs%2Ccs%2Cpy%2Cphp%2Chtml%2Ccss&theme=light" height="44">
 </picture>
 
-<sub>`frontend`</sub><br/>
+<sub>`frontend & design`</sub><br/>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite&theme=dark">
-  <img alt="react, nextjs, tailwind, threejs, vite" src="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite&theme=light" height="44">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite%2Cfigma&theme=dark">
+  <img alt="react, nextjs, tailwind, threejs, vite, figma" src="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite%2Cfigma&theme=light" height="44">
 </picture>
 
 <sub>`backend & data`</sub><br/>
