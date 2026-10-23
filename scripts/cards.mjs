@@ -63,29 +63,54 @@ ${chips}
 </svg>`;
 }
 
-// Grouped stack, one dot per tool in its own brand colour (light, dark).
+// Grouped stack with real logos. Icon paths are vendored in icons.json from
+// Simple Icons (CC0) and Devicon (MIT) for C#, Oracle and AWS.
+const ICONS = JSON.parse(await fs.readFile(path.join(ROOT, "scripts", "icons.json"), "utf8"));
+
 export const STACK = [
-  ["languages", [["TypeScript", "#3178c6"], ["Rust", "#dea584"], ["Swift", "#f05138"], ["C#", "#178600"], ["Python", "#3572a5"], ["PHP", "#4f5d95"]]],
-  ["frontend", [["React", "#61dafb"], ["Next.js", null], ["TanStack", "#ff4154"], ["Tailwind", "#38bdf8"], ["GSAP", "#88ce02"], ["Three.js", null], ["Figma", "#f24e1e"]]],
-  ["backend & data", [["Node.js", "#5fa04e"], [".NET", "#512bd4"], ["GraphQL", "#e10098"], ["PostgreSQL", "#4169e1"], ["Drizzle", "#c5f74f"], ["Prisma", "#5a67d8"], ["MongoDB", "#47a248"]]],
-  ["infra & tools", [["Docker", "#2496ed"], ["Vercel", null], ["Neon", "#00e599"], ["Git", "#f05032"], ["GitHub Actions", "#2088ff"]]],
+  ["languages", ["TypeScript", "Go", "Rust", "Swift", "C#", "Python", "PHP"]],
+  ["frontend", ["React", "Next.js", "Angular", "TanStack", "Tailwind", "GSAP", "Three.js", "Figma"]],
+  ["backend & desktop", ["Node.js", ".NET", "Laravel", "GraphQL", "Tauri"]],
+  ["databases", ["PostgreSQL", "Oracle", "MySQL", "MongoDB", "Redis", "SQLite", "Prisma", "Drizzle"]],
+  ["cloud & infra", ["AWS", "Docker", "Linux", "Git", "GitHub Actions"]],
 ];
 
+const lum = (hex) => {
+  const [r, g, b] = hex.replace("#", "").padEnd(6, hex.slice(-1)).match(/../g).map((c) => {
+    const v = parseInt(c, 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+};
+const contrast = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m); return (x + 0.05) / (y + 0.05); };
+// Brand colours that vanish on the chip (black logos in dark mode, neon ones in light) fall back to the text colour.
+const ink = (fill, T) => (fill === "text" || (fill !== "#fff" && contrast(fill, T.chip) < 2) ? T.text : fill);
+
+function logo(name, x, y, T) {
+  const icon = ICONS[name];
+  if (!icon) throw new Error(`no icon for ${name}`);
+  return `<svg x="${x}" y="${y}" width="14" height="14" viewBox="${icon.viewBox}">${icon.paths.map((p) => `<path d="${p.d}" fill="${ink(p.fill, T)}"${p.rule ? ` fill-rule="${p.rule}"` : ""}/>`).join("")}</svg>`;
+}
+
 function stack(T) {
-  const W = 940, ROW = 44, TOP = 22, H = TOP * 2 + (STACK.length - 1) * ROW + 27;
+  const W = 940, PAD = 24, COL = 160, CH = 28, GAP = 6, LINE = CH + GAP, SECTION = 18;
+  let y = PAD;
   const rows = STACK.map(([label, items], r) => {
-    const y = TOP + r * ROW;
-    let x = 168;
-    const chips = items.map(([name, color]) => {
-      const w = Math.ceil(name.length * 7.2 + 36);
-      const out = `<rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="27" rx="13.5" fill="${T.chip}" stroke="${T.border}"/><circle cx="${x + 15}" cy="${y + 14}" r="4" fill="${color ?? T.text}"/><text x="${x + 25}" y="${y + 18}" class="m" style="fill:${T.text}">${esc(name)}</text>`;
-      x += w + 8;
+    const rule = r ? `<line x1="${PAD}" x2="${W - PAD}" y1="${y - SECTION / 2 - 0.5}" y2="${y - SECTION / 2 - 0.5}" stroke="${T.border}" stroke-dasharray="2 4"/>` : "";
+    const head = `<text x="${PAD}" y="${y + 18}" class="m">${esc(label)}</text>`;
+    let x = COL;
+    const chips = items.map((name) => {
+      const w = Math.ceil(name.length * 7.2 + 40);
+      if (x + w > W - PAD) { x = COL; y += LINE; }
+      const out = `<rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="${CH - 1}" rx="${CH / 2}" fill="${T.chip}" stroke="${T.border}"/>${logo(name, x + 10, y + 7, T)}<text x="${x + 30}" y="${y + 18}" class="m" style="fill:${T.text}">${esc(name)}</text>`;
+      x += w + GAP;
       return out;
     }).join("");
-    const rule = r ? `<line x1="24" x2="${W - 24}" y1="${y - 8.5}" y2="${y - 8.5}" stroke="${T.border}" stroke-dasharray="2 4"/>` : "";
-    return `${rule}<g><text x="24" y="${y + 18}" class="m">${esc(label)}</text>${chips}</g>`;
+    y += CH + SECTION;
+    return rule + head + chips;
   }).join("\n");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Stack: ${esc(STACK.flatMap(([, i]) => i.map(([n]) => n)).join(", "))}">
+  const H = y - SECTION + PAD;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Stack: ${esc(STACK.flatMap(([, i]) => i).join(", "))}">
 <style>
 text{font-family:${SANS};fill:${T.text}}
 .m{font-family:${MONO};font-size:11.5px;fill:${T.muted}}

@@ -32,7 +32,7 @@ open to **freelance projects** and **full-time remote roles**.
 
 ### stack
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-7596317-dark.svg"><img src="assets/stack-7596317-light.svg" width="100%" alt="stack — TypeScript, Rust, Swift, C#, React, Next.js, TanStack, .NET, PostgreSQL, Docker and more"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-28b66c9-dark.svg"><img src="assets/stack-28b66c9-light.svg" width="100%" alt="stack — TypeScript, Go, Rust, Swift, C#, React, Angular, Next.js, Laravel, .NET, Tauri, PostgreSQL, Oracle, AWS and more"></picture>
 
 <br/>
 
