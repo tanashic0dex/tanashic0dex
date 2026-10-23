@@ -9,7 +9,7 @@
 
 i'm a 22 y/o **full-stack product engineer** from brazil, and i ship production software end to end — from the database schema to the last pixel of the interface.
 
-lately that means **payments and marketplaces**: a multi-tenant pix platform in .net, a p2p marketplace in next.js, and the admin dashboards people use to run them every day.
+lately that means **payments and developer tools**: a multi-tenant pix platform in .net, a desktop companion for ai coding agents, and the admin dashboards people use to run them every day.
 
 - **full ownership** — schema, api, ui, deploy. you don't need three people to get one feature out.
 - **product sense** — i build for the metric that matters, not just for what's written in the ticket.
@@ -23,7 +23,7 @@ open to **freelance projects** and **full-time remote roles**.
 ### selected work
 
 <a href="https://armpay.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-armpay-dark.svg"><img src="assets/work-armpay-light.svg" width="49%" alt="ArmPay — multi-tenant PIX payments"></picture></a>&nbsp;
-<a href="https://marketmanga.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-mangastore-dark.svg"><img src="assets/work-mangastore-light.svg" width="49%" alt="Manga Store — P2P marketplace"></picture></a>
+<a href="https://useforky.lol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-forky-dark.svg"><img src="assets/work-forky-light.svg" width="49%" alt="Forky — desktop companion for AI coding agents"></picture></a>
 
 
 <sub>most of my work lives in 35+ private repositories — payments, marketplaces, bots and auth systems. happy to walk you through the code on a call.</sub>

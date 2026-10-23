@@ -16,9 +16,9 @@ export const PROJECTS = [
     stack: [".NET 8", "C#", "GraphQL", "PostgreSQL", "React", "Docker"],
   },
   {
-    slug: "mangastore", n: "02", name: "Manga Store", status: "live", url: "https://marketmanga.vercel.app",
-    desc: ["P2P marketplace for game accounts, items and gold —", "stores, order chat, reviews, PIX and push alerts."],
-    stack: ["Next.js", "TypeScript", "Drizzle", "Neon", "Better Auth", "GSAP"],
+    slug: "forky", n: "02", name: "Forky", status: "live", url: "https://useforky.lol",
+    desc: ["Desktop companion for your AI coding agents — lives", "on top of the screen and calls you when one needs you."],
+    stack: ["Windows", "macOS", "Claude Code", "Hooks", "GitHub API"],
   },
 ];
 
@@ -34,7 +34,8 @@ function card(p, T) {
   const W = 460, H = 200;
   let x = 24;
   const chips = p.stack.map((s) => {
-    const w = s.length * 7 + 16;
+    const w = Math.ceil(s.length * 7.2 + 18);
+    if (x + w > W - 24) return ""; // never let a chip spill past the card edge
     const out = `<rect x="${x + 0.5}" y="152.5" width="${w - 1}" height="21" rx="10.5" fill="${T.chip}" stroke="${T.border}"/><text x="${x + w / 2}" y="166.5" class="m" text-anchor="middle">${esc(s)}</text>`;
     x += w + 6;
     return out;
