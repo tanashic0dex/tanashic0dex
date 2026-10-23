@@ -18,7 +18,7 @@ export const PROJECTS = [
   {
     slug: "forky", n: "02", name: "Forky", status: "live", url: "https://useforky.lol",
     desc: ["Desktop companion for your AI coding agents — lives", "on top of the screen and calls you when one needs you."],
-    stack: ["Rust", "Swift", "TanStack Start", "Claude Code"],
+    stack: ["Rust", "Swift", "TanStack"],
   },
 ];
 
