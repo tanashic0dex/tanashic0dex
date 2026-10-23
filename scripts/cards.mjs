@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
  * Project cards in GitHub's own visual language (light + dark).
- *   node scripts/cards.mjs  →  assets/work-*-{light,dark}.svg
+ *   node scripts/cards.mjs  →  assets/work-<slug>-<hash>-{light,dark}.svg
+ * The content hash in the filename busts GitHub's image cache; README.md is rewritten to match.
  */
+import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -61,8 +63,15 @@ ${chips}
 </svg>`;
 }
 
-await fs.mkdir(path.join(ROOT, "assets"), { recursive: true });
-for (const p of PROJECTS) for (const [name, T] of Object.entries(THEMES)) {
-  await fs.writeFile(path.join(ROOT, "assets", `work-${p.slug}-${name}.svg`), card(p, T));
+const ASSETS = path.join(ROOT, "assets");
+await fs.mkdir(ASSETS, { recursive: true });
+for (const f of await fs.readdir(ASSETS)) if (f.startsWith("work-")) await fs.rm(path.join(ASSETS, f));
+let readme = await fs.readFile(path.join(ROOT, "README.md"), "utf8");
+for (const p of PROJECTS) {
+  const svgs = Object.entries(THEMES).map(([name, T]) => [name, card(p, T)]);
+  const hash = crypto.createHash("sha1").update(svgs.map(([, s]) => s).join("")).digest("hex").slice(0, 7);
+  for (const [name, svg] of svgs) await fs.writeFile(path.join(ASSETS, `work-${p.slug}-${hash}-${name}.svg`), svg);
+  readme = readme.replace(new RegExp(`assets/work-${p.slug}-(?:[0-9a-f]{7}-)?(light|dark)\\.svg`, "g"), `assets/work-${p.slug}-${hash}-$1.svg`);
 }
+await fs.writeFile(path.join(ROOT, "README.md"), readme);
 console.log(`✓ ${PROJECTS.length} project cards`);

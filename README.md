@@ -22,8 +22,8 @@ open to **freelance projects** and **full-time remote roles**.
 
 ### selected work
 
-<a href="https://oloop.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-loop-dark.svg"><img src="assets/work-loop-light.svg" width="49%" alt="LOOP Agency — digital architecture &amp; branding"></picture></a>&nbsp;
-<a href="https://useforky.lol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-forky-dark.svg"><img src="assets/work-forky-light.svg" width="49%" alt="Forky — desktop companion for AI coding agents"></picture></a>
+<a href="https://oloop.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-loop-ff916a4-dark.svg"><img src="assets/work-loop-ff916a4-light.svg" width="49%" alt="LOOP Agency — digital architecture &amp; branding"></picture></a>&nbsp;
+<a href="https://useforky.lol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-forky-b8e59fa-dark.svg"><img src="assets/work-forky-b8e59fa-light.svg" width="49%" alt="Forky — desktop companion for AI coding agents"></picture></a>
 
 
 <sub>most of my work lives in 35+ private repositories — payments, marketplaces, bots and auth systems. happy to walk you through the code on a call.</sub>
