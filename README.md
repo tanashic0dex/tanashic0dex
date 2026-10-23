@@ -32,29 +32,7 @@ open to **freelance projects** and **full-time remote roles**.
 
 ### stack
 
-<sub>`languages`</sub><br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Ccs%2Cpy%2Cphp%2Chtml%2Ccss&theme=dark">
-  <img alt="ts, js, cs, py, php, html, css" src="https://skillicons.dev/icons?i=ts%2Cjs%2Ccs%2Cpy%2Cphp%2Chtml%2Ccss&theme=light" height="44">
-</picture>
-
-<sub>`frontend & design`</sub><br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite%2Cfigma&theme=dark">
-  <img alt="react, nextjs, tailwind, threejs, vite, figma" src="https://skillicons.dev/icons?i=react%2Cnextjs%2Ctailwind%2Cthreejs%2Cvite%2Cfigma&theme=light" height="44">
-</picture>
-
-<sub>`backend & data`</sub><br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs%2Cdotnet%2Cgraphql%2Cpostgres%2Cmongodb%2Cprisma%2Cmysql&theme=dark">
-  <img alt="nodejs, dotnet, graphql, postgres, mongodb, prisma, mysql" src="https://skillicons.dev/icons?i=nodejs%2Cdotnet%2Cgraphql%2Cpostgres%2Cmongodb%2Cprisma%2Cmysql&theme=light" height="44">
-</picture>
-
-<sub>`infra & tools`</sub><br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker%2Cvercel%2Cgit%2Cgithub%2Cvscode&theme=dark">
-  <img alt="docker, vercel, git, github, vscode" src="https://skillicons.dev/icons?i=docker%2Cvercel%2Cgit%2Cgithub%2Cvscode&theme=light" height="44">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-7596317-dark.svg"><img src="assets/stack-7596317-light.svg" width="100%" alt="stack — TypeScript, Rust, Swift, C#, React, Next.js, TanStack, .NET, PostgreSQL, Docker and more"></picture>
 
 <br/>
 

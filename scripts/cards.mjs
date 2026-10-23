@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Project cards in GitHub's own visual language (light + dark).
- *   node scripts/cards.mjs  →  assets/work-<slug>-<hash>-{light,dark}.svg
+ *   node scripts/cards.mjs  →  assets/{work-<slug>,stack}-<hash>-{light,dark}.svg
  * The content hash in the filename busts GitHub's image cache; README.md is rewritten to match.
  */
 import crypto from "node:crypto";
@@ -63,15 +63,48 @@ ${chips}
 </svg>`;
 }
 
+// Grouped stack, one dot per tool in its own brand colour (light, dark).
+export const STACK = [
+  ["languages", [["TypeScript", "#3178c6"], ["Rust", "#dea584"], ["Swift", "#f05138"], ["C#", "#178600"], ["Python", "#3572a5"], ["PHP", "#4f5d95"]]],
+  ["frontend", [["React", "#61dafb"], ["Next.js", null], ["TanStack", "#ff4154"], ["Tailwind", "#38bdf8"], ["GSAP", "#88ce02"], ["Three.js", null], ["Figma", "#f24e1e"]]],
+  ["backend & data", [["Node.js", "#5fa04e"], [".NET", "#512bd4"], ["GraphQL", "#e10098"], ["PostgreSQL", "#4169e1"], ["Drizzle", "#c5f74f"], ["Prisma", "#5a67d8"], ["MongoDB", "#47a248"]]],
+  ["infra & tools", [["Docker", "#2496ed"], ["Vercel", null], ["Neon", "#00e599"], ["Git", "#f05032"], ["GitHub Actions", "#2088ff"]]],
+];
+
+function stack(T) {
+  const W = 940, ROW = 44, TOP = 22, H = TOP * 2 + (STACK.length - 1) * ROW + 27;
+  const rows = STACK.map(([label, items], r) => {
+    const y = TOP + r * ROW;
+    let x = 168;
+    const chips = items.map(([name, color]) => {
+      const w = Math.ceil(name.length * 7.2 + 36);
+      const out = `<rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="27" rx="13.5" fill="${T.chip}" stroke="${T.border}"/><circle cx="${x + 15}" cy="${y + 14}" r="4" fill="${color ?? T.text}"/><text x="${x + 25}" y="${y + 18}" class="m" style="fill:${T.text}">${esc(name)}</text>`;
+      x += w + 8;
+      return out;
+    }).join("");
+    const rule = r ? `<line x1="24" x2="${W - 24}" y1="${y - 8.5}" y2="${y - 8.5}" stroke="${T.border}" stroke-dasharray="2 4"/>` : "";
+    return `${rule}<g><text x="24" y="${y + 18}" class="m">${esc(label)}</text>${chips}</g>`;
+  }).join("\n");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Stack: ${esc(STACK.flatMap(([, i]) => i.map(([n]) => n)).join(", "))}">
+<style>
+text{font-family:${SANS};fill:${T.text}}
+.m{font-family:${MONO};font-size:11.5px;fill:${T.muted}}
+</style>
+<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="12" fill="${T.bg}" stroke="${T.border}"/>
+${rows}
+</svg>`;
+}
+
 const ASSETS = path.join(ROOT, "assets");
 await fs.mkdir(ASSETS, { recursive: true });
-for (const f of await fs.readdir(ASSETS)) if (f.startsWith("work-")) await fs.rm(path.join(ASSETS, f));
+for (const f of await fs.readdir(ASSETS)) if (/^(work|stack)-/.test(f)) await fs.rm(path.join(ASSETS, f));
 let readme = await fs.readFile(path.join(ROOT, "README.md"), "utf8");
-for (const p of PROJECTS) {
-  const svgs = Object.entries(THEMES).map(([name, T]) => [name, card(p, T)]);
+const outputs = [...PROJECTS.map((p) => [`work-${p.slug}`, (T) => card(p, T)]), ["stack", stack]];
+for (const [base, render] of outputs) {
+  const svgs = Object.entries(THEMES).map(([name, T]) => [name, render(T)]);
   const hash = crypto.createHash("sha1").update(svgs.map(([, s]) => s).join("")).digest("hex").slice(0, 7);
-  for (const [name, svg] of svgs) await fs.writeFile(path.join(ASSETS, `work-${p.slug}-${hash}-${name}.svg`), svg);
-  readme = readme.replace(new RegExp(`assets/work-${p.slug}-(?:[0-9a-f]{7}-)?(light|dark)\\.svg`, "g"), `assets/work-${p.slug}-${hash}-$1.svg`);
+  for (const [name, svg] of svgs) await fs.writeFile(path.join(ASSETS, `${base}-${hash}-${name}.svg`), svg);
+  readme = readme.replace(new RegExp(`assets/${base}-(?:[0-9a-f]{7}-)?(light|dark)\\.svg`, "g"), `assets/${base}-${hash}-$1.svg`);
 }
 await fs.writeFile(path.join(ROOT, "README.md"), readme);
-console.log(`✓ ${PROJECTS.length} project cards`);
+console.log(`✓ ${PROJECTS.length} project cards + stack`);
