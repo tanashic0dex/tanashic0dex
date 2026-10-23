@@ -11,9 +11,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 export const PROJECTS = [
   {
-    slug: "armpay", n: "01", name: "ArmPay", status: "live", url: "https://armpay.vercel.app",
-    desc: ["Multi-tenant PIX payments — billing, invoices and", "recurring charges, one isolated database per tenant."],
-    stack: [".NET 8", "C#", "GraphQL", "PostgreSQL", "React", "Docker"],
+    slug: "loop", n: "01", name: "LOOP Agency", status: "live", url: "https://oloop.com.br",
+    desc: ["Digital architecture & branding studio — high-", "performance sites, motion design and brand identity."],
+    stack: ["Next.js", "React", "TypeScript", "Motion", "Branding"],
   },
   {
     slug: "forky", n: "02", name: "Forky", status: "live", url: "https://useforky.lol",

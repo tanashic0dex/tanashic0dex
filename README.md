@@ -9,7 +9,7 @@
 
 i'm a 22 y/o **full-stack product engineer** from brazil, and i ship production software end to end — from the database schema to the last pixel of the interface.
 
-lately that means **payments and developer tools**: a multi-tenant pix platform in .net, a desktop companion for ai coding agents, and the admin dashboards people use to run them every day.
+lately that means **brands, payments and developer tools**: loop, a digital architecture & branding agency, a multi-tenant pix platform in .net, and a desktop companion for ai coding agents.
 
 - **full ownership** — schema, api, ui, deploy. you don't need three people to get one feature out.
 - **product sense** — i build for the metric that matters, not just for what's written in the ticket.
@@ -22,7 +22,7 @@ open to **freelance projects** and **full-time remote roles**.
 
 ### selected work
 
-<a href="https://armpay.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-armpay-dark.svg"><img src="assets/work-armpay-light.svg" width="49%" alt="ArmPay — multi-tenant PIX payments"></picture></a>&nbsp;
+<a href="https://oloop.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-loop-dark.svg"><img src="assets/work-loop-light.svg" width="49%" alt="LOOP Agency — digital architecture &amp; branding"></picture></a>&nbsp;
 <a href="https://useforky.lol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-forky-dark.svg"><img src="assets/work-forky-light.svg" width="49%" alt="Forky — desktop companion for AI coding agents"></picture></a>
 
 
