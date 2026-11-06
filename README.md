@@ -22,7 +22,7 @@ open to **freelance projects** and **full-time remote roles**.
 
 ### selected work
 
-<a href="https://oloop.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-loop-ff916a4-dark.svg"><img src="assets/work-loop-ff916a4-light.svg" width="49%" alt="LOOP Agency — digital architecture &amp; branding"></picture></a>&nbsp;
+<a href="https://www.myui.club"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-loop-ff916a4-dark.svg"><img src="assets/work-loop-ff916a4-light.svg" width="49%" alt="MyUI — React Components &amp; branding"></picture></a>&nbsp;
 <a href="https://useforky.lol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-forky-b8e59fa-dark.svg"><img src="assets/work-forky-b8e59fa-light.svg" width="49%" alt="Forky — desktop companion for AI coding agents"></picture></a>
 
 
